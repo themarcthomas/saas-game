@@ -4,13 +4,9 @@ import Runway from './metrics/Runway';
 import BurnRate from './metrics/BurnRate';
 import './css/SaaSHealthOverview.css';
 
-const SaaSHealthOverview = () => {
-  const mrr = 0;
-  const runway = 10000;
-  const burnRate = 1000;
-
+const SaaSHealthOverview = ({ mrr, runway, burnRate }) => {
   return (
-    <div className="SaaSHealthOverview">
+    <div className="saas-health-overview">
       <h2>SaaS Health Overview</h2>
       <div className="metrics">
         <MRR mrr={mrr} />
